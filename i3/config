@@ -19,7 +19,7 @@ font pango:firacode 8
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
 #font pango:DejaVu Sans Mono 8
 
-font xft:firacode 11
+font pango:firacode 12
 title_align center
 for_window [class=".*"] title_format "%title"
 
