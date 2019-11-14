@@ -201,9 +201,11 @@ gaps inner 40
 gaps outer 10
 
 
-bindsym $mod+d exec rofi -show run -lines 3 -eh 2 -width 100 -padding 800 -opacity "85" -bw 0 -bc $unf_bg -bg $unf_bg -fg "$unf_fg" -hlbg "$foc_bg" -hlfg "$foc_fg" -font "Fira Code 12"
+#bindsym $mod+d exec rofi -show run -lines 3 -eh 2 -width 100 -padding 800 -opacity "85" -bw 0 -bc $unf_bg -bg $unf_bg -fg "$unf_fg" -hlbg "$foc_bg" -hlfg "$foc_fg" -font "Fira Code 12"
 smart_borders on
+bindsym $mod+d exec "~/Scripts/rice/rofi_launcher.sh"
 
+for_window [title="feh.*blured.png"] floating enable
 
 set $mode_gaps Gaps: (o) outer, (i) inner
 set $mode_gaps_outer Outer Gaps: +|-|0 (local), Shift + +|-|0 (global)
