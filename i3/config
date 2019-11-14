@@ -42,7 +42,7 @@ bindsym $mod+Return exec terminator
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec dmenu_run
+
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
@@ -193,16 +193,15 @@ client.placeholder      $unf_bg $unf_bg $unf_fg $unf_bg $unf_bg
 client.background       $border
 
 
-
-
 exec --no-startup-id feh --bg-fill ~/Pictures/3.jpg
 
-exec --no-startup-id compton
+exec --no-startup-id compton -f
 
 gaps inner 40
 gaps outer 10
 
 
+bindsym $mod+d exec rofi -show run -lines 3 -eh 2 -width 100 -padding 800 -opacity "85" -bw 0 -bc $unf_bg -bg $unf_bg -fg "$unf_fg" -hlbg "$foc_bg" -hlfg "$foc_fg" -font "Fira Code 12"
 smart_borders on
 
 
