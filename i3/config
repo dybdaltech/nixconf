@@ -51,7 +51,7 @@ bindsym $mod+Shift+q kill
 # change focus
 bindsym $mod+j focus left
 bindsym $mod+k focus down
-bindsym $mod+l focus up
+#bindsym $mod+l focus up
 bindsym $mod+oslash focus right
 
 # alternatively, you can use the cursor keys:
@@ -193,10 +193,10 @@ client.placeholder      $unf_bg $unf_bg $unf_fg $unf_bg $unf_bg
 client.background       $border
 
 
-exec --no-startup-id feh --bg-fill ~/Pictures/3.jpg
+exec --no-startup-id feh --bg-fill ~/Pictures/6.jpg
 
 exec --no-startup-id compton -f
-
+exec_always --no-startup-id ~/Scripts/rice/launch_polybar.sh
 gaps inner 40
 gaps outer 10
 
@@ -204,6 +204,7 @@ gaps outer 10
 #bindsym $mod+d exec rofi -show run -lines 3 -eh 2 -width 100 -padding 800 -opacity "85" -bw 0 -bc $unf_bg -bg $unf_bg -fg "$unf_fg" -hlbg "$foc_bg" -hlfg "$foc_fg" -font "Fira Code 12"
 smart_borders on
 bindsym $mod+d exec "~/Scripts/rice/rofi_launcher.sh"
+bindsym $mod+l exec "~/Scripts/rice/lock.sh"
 
 for_window [title="feh.*blured.png"] floating enable
 
